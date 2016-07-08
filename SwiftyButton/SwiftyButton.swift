@@ -119,9 +119,9 @@ public class SwiftyButton: UIButton {
     
     func updateBackgroundImages() {
         
-        let normalImage = SwiftyButton.buttonImageWithColor(buttonColor, shadowHeight: shadowHeight, shadowColor: shadowColor, cornerRadius: cornerRadius)
-        let highlightedImage = SwiftyButton.highlightedButtonImageWithColor(highlightedColor ?? buttonColor, shadowHeight: shadowHeight, shadowColor: shadowColor, cornerRadius: cornerRadius, buttonPressDepth: buttonPressDepth)
-        let disabledImage = SwiftyButton.buttonImageWithColor(disabledButtonColor, shadowHeight: shadowHeight, shadowColor: disabledShadowColor, cornerRadius: cornerRadius)
+        let normalImage = SwiftyButton.buttonImage(color: buttonColor, shadowHeight: shadowHeight, shadowColor: shadowColor, cornerRadius: cornerRadius)
+        let highlightedImage = SwiftyButton.highlightedButtonImage(color: highlightedColor ?? buttonColor, shadowHeight: shadowHeight, shadowColor: shadowColor, cornerRadius: cornerRadius, buttonPressDepth: buttonPressDepth)
+        let disabledImage = SwiftyButton.buttonImage(color: disabledButtonColor, shadowHeight: shadowHeight, shadowColor: disabledShadowColor, cornerRadius: cornerRadius)
         
         setBackgroundImage(normalImage,      for: .normal)
         setBackgroundImage(highlightedImage, for: .highlighted)
