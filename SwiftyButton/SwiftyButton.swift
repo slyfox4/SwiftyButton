@@ -11,12 +11,12 @@ import UIKit
 // MARK: - Defaults
 
 public struct SwiftyButtonDefaults {
-    public static var buttonColor         = UIColor.cyan()
-    public static var shadowColor         = UIColor.blue()
+    public static var buttonColor         = UIColor.cyan
+    public static var shadowColor         = UIColor.blue
     public static var shadowHeight        = CGFloat(3)
     public static var cornerRadius        = CGFloat(3)
-    public static var disabledButtonColor = UIColor.lightGray()
-    public static var disabledShadowColor = UIColor.darkGray()
+    public static var disabledButtonColor = UIColor.lightGray
+    public static var disabledShadowColor = UIColor.darkGray
     public static var titleFont           = UIFont.systemFont(ofSize: 20)
     public static var buttonPressDepth    = CGFloat(0.7) // In percentage of shadowHeight
     

@@ -32,14 +32,14 @@ class ViewController: UIViewController {
         label.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 10), excludingEdge: .left)
         label.autoPinEdge(.left, to: .right, of: indicator, withOffset: 10)
         label.text = "Loading..."
-        label.textColor = UIColor.white()
+        label.textColor = UIColor.white
         
         // Regression: Make sure that button with cornerRadius = 0 and shadowHeight = 0 doesn't crash
         // Was crashing in 0.3.1
         let zeroButton = SwiftyButton()
         zeroButton.shadowHeight = 0
         zeroButton.cornerRadius = 0
-        zeroButton.highlightedColor = UIColor.blue()
+        zeroButton.highlightedColor = UIColor.blue
         view.addSubview(zeroButton)
         zeroButton.autoPinEdge(.top, to: .bottom, of: button, withOffset: 30)
         zeroButton.autoAlignAxis(toSuperviewAxis: .vertical)
