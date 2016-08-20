@@ -24,7 +24,7 @@ public struct SwiftyButtonDefaults {
 }
 
 @IBDesignable
-public class SwiftyButton: UIButton {
+open class SwiftyButton: UIButton {
     
     // MARK: - Public properties
     
@@ -80,7 +80,7 @@ public class SwiftyButton: UIButton {
     
     // MARK: - UIButton
     
-    override public var isHighlighted: Bool {
+    override open var isHighlighted: Bool {
 		get {
             return super.isHighlighted
         }
